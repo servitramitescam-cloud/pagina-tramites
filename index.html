@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SERVITRAMITES - Gestión Empresarial 360</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container-nav">
+            <div class="logo">
+                <i class="fas fa-briefcase"></i>
+                <span>SERVITRAMITES</span>
+            </div>
+            <div class="nav-links">
+                <a href="#inicio">Inicio</a>
+                <a href="#servicios">Servicios</a>
+                <a href="#tramites">Trámites</a>
+                <a href="#contacto">Contacto</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>SERVITRAMITES</h1>
+            <h2>Gestión Empresarial 360</h2>
+            <p>Simplificamos tus trámites empresariales</p>
+            <button class="cta-button" onclick="document.getElementById('tramites').scrollIntoView({behavior: 'smooth'})">Comienza Ahora</button>
+        </div>
+    </section>
+
+    <!-- Servicios -->
+    <section id="servicios" class="servicios">
+        <div class="container">
+            <h2>Nuestros Servicios</h2>
+            <div class="servicios-grid">
+                <div class="servicio-card">
+                    <i class="fas fa-file-contract"></i>
+                    <h3>Trámites Legales</h3>
+                    <p>Gestión completa de documentación legal y constitucional</p>
+                </div>
+                <div class="servicio-card">
+                    <i class="fas fa-calculator"></i>
+                    <h3>Asesoría Fiscal</h3>
+                    <p>Planificación tributaria y cumplimiento normativo</p>
+                </div>
+                <div class="servicio-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Consultoría Empresarial</h3>
+                    <p>Estrategias de crecimiento y desarrollo empresarial</p>
+                </div>
+                <div class="servicio-card">
+                    <i class="fas fa-building"></i>
+                    <h3>Registro Mercantil</h3>
+                    <p>Inscripción y actualización en el registro público</p>
+                </div>
+                <div class="servicio-card">
+                    <i class="fas fa-id-card"></i>
+                    <h3>Documentación Corporativa</h3>
+                    <p>Elaboración de estatutos y actas corporativas</p>
+                </div>
+                <div class="servicio-card">
+                    <i class="fas fa-handshake"></i>
+                    <h3>Gestión Administrativa</h3>
+                    <p>Apoyo integral en procesos administrativos</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trámites Disponibles -->
+    <section id="tramites" class="tramites">
+        <div class="container">
+            <h2>Trámites Disponibles</h2>
+            <div class="tramites-list">
+                <div class="tramite-item">
+                    <h3>Constitución de Empresa</h3>
+                    <p>Registra tu empresa de forma legal y oficial</p>
+                    <span class="badge">Rápido</span>
+                </div>
+                <div class="tramite-item">
+                    <h3>Obtención de NIT</h3>
+                    <p>Número de Identificación Tributaria</p>
+                    <span class="badge">Esencial</span>
+                </div>
+                <div class="tramite-item">
+                    <h3>Licencia de Funcionamiento</h3>
+                    <p>Autorización municipal para operación</p>
+                    <span class="badge">Obligatorio</span>
+                </div>
+                <div class="tramite-item">
+                    <h3>Afiliación a EPS</h3>
+                    <p>Seguridad social para empleados</p>
+                    <span class="badge">Prioritario</span>
+                </div>
+                <div class="tramite-item">
+                    <h3>Declaración de Renta</h3>
+                    <p>Cumplimiento tributario anual</p>
+                    <span class="badge">Anual</span>
+                </div>
+                <div class="tramite-item">
+                    <h3>Modificación de Estatutos</h3>
+                    <p>Cambios en la estructura societaria</p>
+                    <span class="badge">Flexible</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="contacto">
+        <div class="container">
+            <h2>Contactanos</h2>
+            <div class="contacto-content">
+                <div class="info-contacto">
+                    <h3>SERVITRAMITES - GESTIÓN EMPRESARIAL 360</h3>
+                    <div class="contacto-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Teléfono</h4>
+                            <p><a href="tel:+573238593254">+57 3238593254</a></p>
+                        </div>
+                    </div>
+                    <div class="contacto-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Correo Electrónico</h4>
+                            <p><a href="mailto:servitramitescam@gmail.com">servitramitescam@gmail.com</a></p>
+                        </div>
+                    </div>
+                    <div class="contacto-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Horario de Atención</h4>
+                            <p>Lunes a Viernes: 8:00 AM - 5:00 PM<br>Sábado: 9:00 AM - 1:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contacto-form">
+                    <input type="text" placeholder="Tu Nombre" required>
+                    <input type="email" placeholder="Tu Correo" required>
+                    <input type="tel" placeholder="Tu Teléfono">
+                    <textarea placeholder="Tu Mensaje" rows="5" required></textarea>
+                    <button type="submit" class="submit-btn">Enviar Mensaje</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 SERVITRAMITES - Gestión Empresarial 360. Todos los derechos reservados.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
